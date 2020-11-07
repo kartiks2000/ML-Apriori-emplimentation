@@ -21,8 +21,8 @@ for i in range(0, 7501):
 
 # Training the Apriori model on the dataset
 # We will NOT import and use any liberaries.
-# We will be using function from an external file "apyori.py" having emplimentation of Apriori algorithm, fetched from python software foundation.
-from apyori import apriori
+# We will be using function from an external file "Apyori_Algorithm_Liberar.py" having emplimentation of Apriori algorithm, fetched from python software foundation.
+from Apyori_Algorithm_Liberary import apriori
 rules = apriori(transactions, min_support = 0.003, min_confidence = 0.2, min_lift = 3, min_length = 2)
 
 # Visualising the results
